@@ -4,15 +4,18 @@ import '../index.css'
 
 export default function Die(props) {
 
-    var valid = props.valid
+    var isHeld = props.isHeld
 
-    function toGreen() {
-        valid ? document.getElementById(props.id).style.backgroundColor = "#c5c5c5" : document.getElementById(props.id).style.backgroundColor = "green"
-        valid = !valid 
+    const styles = {
+        backgroundColor: isHeld ? "#59E391" : "#c5c5c5"
     }
 
 
     return (
-        <button id={props.id} onClick={toGreen}>{props.value}</button>
+        <button
+            id={props.id}
+            onClick={props.hold}
+            style={styles}>{props.value}
+        </button>
     )
 }
