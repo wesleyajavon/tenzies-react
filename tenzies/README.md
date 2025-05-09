@@ -19,7 +19,7 @@ This project was created to practice working with React state, conditional rende
 4. Once you win, click **New Game** to restart.
 
 
-### Installation
+## Installation
 
 1. Clone the repository:
    git clone https://github.com/wesleyajavon/tenzies-react
