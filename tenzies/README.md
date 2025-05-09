@@ -1,12 +1,32 @@
-# React + Vite
+# 🎲 Tenzies Game (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A browser-based version of the classic dice game **Tenzies**, built with React. The goal is to roll until all 10 dice show the same number. You can hold dice between rolls to try and match the rest.
 
-Currently, two official plugins are available:
+This project was created to practice working with React state, conditional rendering, and component structuring.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 What I Practiced
 
-## Expanding the ESLint configuration
+- React state management using `useState`.
+- Conditionally rendering UI elements.
+- Creating reusable components.
+- Handling game logic (win conditions, resetting, etc.).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎮 How to Play
+
+1. Click the **Roll** button to roll all dice.
+2. Click on a die to **hold its value**.
+3. Keep rolling until **all dice show the same number** and are held.
+4. Once you win, click **New Game** to restart.
+
+
+### Installation
+
+1. Clone the repository:
+   git clone https://github.com/wesleyajavon/tenzies-react
+   cd tenzies-react
+   npm install
+   npm run dev
+
+## 🖼️ Screenshot
+
+![Tenzies Game Screenshot](./public/screenshot.png)

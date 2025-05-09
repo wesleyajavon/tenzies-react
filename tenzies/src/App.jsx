@@ -14,11 +14,11 @@ export default function App() {
   const gameWon = dice.every(die => die.isHeld) &&
     dice.every(die => die.value === dice[0].value)
 
-    useEffect(() => {
-      if (gameWon) {
-        redirectButton.current?.focus()
-      }
-      
+  useEffect(() => {
+    if (gameWon) {
+      redirectButton.current?.focus()
+    }
+
   }, [gameWon])
 
 
@@ -40,15 +40,12 @@ export default function App() {
           die :
           { ...die, value: Math.ceil(Math.random() * 6) }
       ))
-  
+
       setCount(prevValue => prevValue + 1)
     } else {
       setDice(generateAllNewDice())
       setCount(0)
     }
-
-    
-
   }
 
   function hold(id) {
@@ -72,7 +69,7 @@ export default function App() {
     <span>
 
       <main>
-        {gameWon && <Confetti/>}
+        {gameWon && <Confetti />}
         <div aria-live="polite" className='sr-only'>
           {gameWon && <p>Congratulations! You've won! Press "New Game" to start again.</p>}
         </div>
@@ -85,7 +82,7 @@ export default function App() {
 
         <div>
           <button ref={redirectButton} className='roll-dice' onClick={rollDice}>
-            {gameWon ? "New Game" : "Roll"} 
+            {gameWon ? "New Game" : "Roll"}
           </button>
         </div>
       </main>
