@@ -30,6 +30,10 @@ Tenzies React is a web application that allows users to play the Tenzies dice ga
 - HTML
 - CSS
 
+## 🔗 Live Demo
+
+https://tenzies-react-nine.vercel.app/
+
 ## Getting Started
 
 To run this project locally:
