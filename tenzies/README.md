@@ -1,5 +1,8 @@
 # 🎲 Tenzies Game (React)
 
+🌐 **Live Site:** [https://tenzies-react-nine.vercel.app/](https://tenzies-react-nine.vercel.app/)
+
+
 A browser-based version of the classic dice game **Tenzies**, built with React. The goal is to roll until all 10 dice show the same number. You can hold dice between rolls to try and match the rest.
 
 This project was created to practice working with React state, conditional rendering, and component structuring.
@@ -20,12 +23,14 @@ This project was created to practice working with React state, conditional rende
 
 
 ## Installation
-
+```bash
 1. Clone the repository:
-   git clone https://github.com/wesleyajavon/tenzies-react
+   git clone https://github.com/wesleyajavon/tenzies-react.git
    cd tenzies-react
+   cd tenzies
    npm install
    npm run dev
+```
 
 ## 🖼️ Screenshot
 
